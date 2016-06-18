@@ -1,5 +1,4 @@
 # letsencrypt-certbot-docker
-Dockerfile to build letsencrypt-image
 
 More information:
 https://github.com/certbot/certbot
