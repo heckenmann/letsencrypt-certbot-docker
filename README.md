@@ -1,13 +1,21 @@
 # letsencrypt-docker
 Dockerfile to build letsencrypt-image
 
+More information:
+https://github.com/certbot/certbot
+
 ## Build image
 ```
 docker build --rm -t heckenmann/letsencrypt github.com/heckenmann/letsencrypt-docker
 ```
 
 ## Run container
-(You have to set your domain and the path where the certs have to be)
+(You have to set your domain)
 ```
-docker run --it --name letsencrypt -v <<path-where-the-certs-should-be-later>>:/etc/letsencrypt/archive -e DOMAIN=<<YOUR_DOMAIN>> heckenmann/letsencrypt
+docker run --it --name letsencrypt -e DOMAIN=<<YOUR_DOMAIN>> heckenmann/letsencrypt
+```
+
+## Get files
+```
+docker cp letsencrypt:/etc/letsencrypt/archive <<your-favorite-directory>>
 ```
