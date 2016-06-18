@@ -6,7 +6,7 @@ https://github.com/certbot/certbot
 
 ## Build image
 ```
-docker build --rm -t heckenmann/letsencrypt github.com/heckenmann/letsencrypt-docker
+docker build --rm -t heckenmann/letsencrypt github.com/heckenmann/letsencrypt-certbot-docker
 ```
 
 ## Run container
